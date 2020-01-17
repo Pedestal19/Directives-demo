@@ -20,9 +20,9 @@ export class NgforofDemoComponent implements OnInit {
   ngOnInit() {
     this.people = [
       {name: 'Hosanna', age: 45, city: 'Abuja', picture: '/assets/images/hosanna.jpg'},
-      {name: 'Gabe', age: 45, city: 'Abuja', picture: '/assets/images/gabe.jpg'},
-      {name: 'Oji', age: 45, city: 'Abuja', picture: '/assets/images/oji.jpg'},
-      {name: 'Moninseh', age: 45, city: 'Abuja', picture: '/assets/images/moninseh.jpg'},
+      {name: 'Gabe', age: 15, city: 'Abuja', picture: '/assets/images/gabe.jpg'},
+      {name: 'Oji', age: 5, city: 'Abuja', picture: '/assets/images/oji.jpg'},
+      {name: 'Moninseh', age: 19, city: 'Abuja', picture: '/assets/images/moninseh.jpg'},
 
     ]
   }

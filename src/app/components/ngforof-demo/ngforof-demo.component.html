@@ -3,7 +3,7 @@
 <hr>
 
 <ul>
-    <li *ngFor="let p of people">
+    <li *ngFor="let p of people" [ngClass] = "{'text-success': p.age>=18}">
         <img [src]="p.picture" [ngStyle]="imgStyles">
         {{p.name}} is from {{p.city}}
     </li>
