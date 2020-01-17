@@ -27,4 +27,13 @@ export class NgforofDemoComponent implements OnInit {
     ]
   }
 
+  getCssClass(age){
+    if(age<18){
+      return 'text-success'
+    }
+    else{
+      return 'text-danger'
+    }
+  }
+
 }
