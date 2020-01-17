@@ -1,0 +1,10 @@
+<h3>ngForOf Demo</h3>
+
+<hr>
+
+<ul>
+    <li *ngFor="let p of people">
+        <img [src]="p.picture" [ngStyle]="imgStyles">
+        {{p.name}} is from {{p.city}}
+    </li>
+</ul>
