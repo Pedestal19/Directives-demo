@@ -1,10 +1,11 @@
 <h3>ngForOf Demo</h3>
 
 <hr>
-
+<h4>There are {{ people.length }} Contacts</h4>
 <ul>
-    <li *ngFor="let p of people" [ngClass] = "getCssClass(p.age)">
-        <img [src]="p.picture" [ngStyle]="imgStyles">
+    <li *ngFor="let p of people; index as i" [ngClass] = "getCssClass(p.age)">
+        {{i+1}} <img [src]="p.picture" [ngStyle]="imgStyles">
         {{p.name}} is from {{p.city}}
+        <button class="btn btn-warning" (click)="deletePerson(i)">X</button>
     </li>
 </ul>
