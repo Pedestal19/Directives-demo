@@ -1,7 +1,8 @@
 <h3>ngForOf Demo</h3>
 
 <hr>
-<h4>There are {{ people.length }} Contacts</h4>
+<h4 *ngIf="people.length>0">There are {{ people.length }} Contacts</h4>
+<h4 *ngIf="people.length===0">They are no contacts in your address book</h4>
 <ul>
     <li *ngFor="let p of people; index as i" [ngClass] = "getCssClass(p.age)">
         {{i+1}} <img [src]="p.picture" [ngStyle]="imgStyles">
